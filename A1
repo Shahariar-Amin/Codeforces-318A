@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+ll n,k;
+
+int main( )
+{
+	
+	cin>>n>>k;
+	ll l;//I use l to know the numbers of odd number.
+	if(n%2==0){
+		l=n/2;
+	}
+	else{
+		l=n/2;
+		l++;
+	}
+	if(k<=l){    
+		  cout<<k * 2 - 1 << endl;//when k is from odd number
+	}
+	else{
+	     cout<< (k - (n + 1) / 2) * 2 << endl;//when k is from even number.
+	}
+}
